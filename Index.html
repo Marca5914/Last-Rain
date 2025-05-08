@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>When Did It Last Rain?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>When Did It Last Rain?</h1>
+        <button id="getLocationBtn">Use My Current Location</button>
+        <div id="locationInputArea" style="display: none;">
+            <p>Or enter location (Latitude, Longitude):</p>
+            <input type="text" id="latitudeInput" placeholder="Latitude">
+            <input type="text" id="longitudeInput" placeholder="Longitude">
+            <button id="submitLocationBtn">Get Weather</button>
+        </div>
+        <p class="toggle-input">
+            <a href="#" id="toggleManualLocation">Enter location manually</a>
+        </p>
+        <div id="result" class="result-box" aria-live="polite">
+            <p>Click the button or enter coordinates to find out when it last rained.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
