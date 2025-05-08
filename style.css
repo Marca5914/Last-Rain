@@ -1,0 +1,110 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f4f8;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#locationInputArea input[type="text"] {
+    padding: 10px;
+    margin: 5px 5px 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 15px;
+    width: calc(50% - 12px); /* Adjust width for two inputs side by side */
+}
+
+.toggle-input {
+    font-size: 0.9em;
+    margin-top: 15px;
+}
+
+.toggle-input a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.toggle-input a:hover {
+    text-decoration: underline;
+}
+
+.result-box {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #eaf2f8;
+    border-radius: 5px;
+    border: 1px solid #d1e0ec;
+    min-height: 50px; /* Ensure it has some height even when empty */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result-box p {
+    margin: 0;
+    font-size: 1.1em;
+    color: #2c3e50;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    button {
+        font-size: 15px;
+        padding: 10px 15px;
+    }
+
+    #locationInputArea input[type="text"] {
+        width: calc(100% - 10px); /* Stack inputs on smaller screens */
+        margin-right: 0;
+    }
+}
