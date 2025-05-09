@@ -24,7 +24,22 @@ body {
 
 h1 {
     color: #2c3e50;
-    margin-bottom: 25px;
+    margin-bottom: 20px; /* Adjusted margin */
+}
+
+/* Plant Image Styling */
+.plant-image-container {
+    margin-bottom: 20px;
+    height: 150px; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#plantImage {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain; /* Ensures the image scales nicely */
 }
 
 button {
@@ -52,7 +67,7 @@ button:hover {
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 15px;
-    width: calc(50% - 12px); /* Adjust width for two inputs side by side */
+    width: calc(50% - 12px);
 }
 
 .toggle-input {
@@ -70,12 +85,12 @@ button:hover {
 }
 
 .result-box {
-    margin-top: 25px;
+    margin-top: 20px; /* Adjusted margin */
     padding: 15px;
     background-color: #eaf2f8;
     border-radius: 5px;
     border: 1px solid #d1e0ec;
-    min-height: 50px; /* Ensure it has some height even when empty */
+    min-height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,7 +102,6 @@ button:hover {
     color: #2c3e50;
 }
 
-/* Responsive adjustments */
 @media (max-width: 600px) {
     .container {
         margin: 20px;
@@ -104,7 +118,11 @@ button:hover {
     }
 
     #locationInputArea input[type="text"] {
-        width: calc(100% - 10px); /* Stack inputs on smaller screens */
+        width: calc(100% - 10px);
         margin-right: 0;
+    }
+
+    .plant-image-container {
+        height: 120px; /* Adjust for smaller screens */
     }
 }
